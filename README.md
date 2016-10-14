@@ -1,0 +1,2 @@
+# CS6001-HW3
+Homework 3 for CS6001 FS2016 at MST
