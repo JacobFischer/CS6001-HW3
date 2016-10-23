@@ -79,14 +79,63 @@
 \(x^2\) + x + 1 & ) & \(x^5\) &           & + \(x^3\) & + \(x^2\) & + x & + 1 \\
                 & - & \(x^5\) & + \(x^4\) & + \(x^3\) &           &     &     \\ \hhline{~~------}
                 &   &         &   \(x^4\) &           & + \(x^2\) & + x & + 1 \\
-                &   &      -  &   \(x^4\) & + \(x^3\) & + \(x^2\) &     &     \\ \hhline{~~~-----}
+                &   &       - &   \(x^4\) & + \(x^3\) & + \(x^2\) &     &     \\ \hhline{~~~-----}
                 &   &         &           & \(x^3\)   &           & + x & + 1 \\
                 &   &         &         - & \(x^3\)   & + \(x^2\) & + x &     \\ \hhline{~~~~----}
                 &   &         &           &           & \(x^2\)   &     & + 1 \\
-                &   &         &           & -         & \(x^2\)   & + x & + 1 \\ \hhline{~~~~~---}
-                &   &         &           &           &      & x   &    
+                &   &         &           &         - & \(x^2\)   & + x & + 1 \\ \hhline{~~~~~---}
+                &   &         &           &           &           &   x &    
 \end{tabular}
 
 = \(x^3 + x^2 + x + 1,\ R\ x\)
+
+\section{Problem 3}
+
+MI of 010 with IP \(x^3 + x + 1\) = \(x^2 + 1\)
+\\
+MI of 010 with IP \(x^3 + x^2 + 1\) = \(x^2 + x\)
+
+\section{Problem 4}
+
+With IP \(x^3 + x + 1\)
+
+\begin{equation*}
+  \begin{split}
+    (x^2 + x + 1) + (x^2 + 1) &= x \\
+    (x^2 + x + 1) - (x^2 + 1) &= x \\
+    (x^2 + x + 1) * (x^2 + 1) &= x^2 + x \\
+    (x^2 + x + 1) / (x^2 + 1) &=\ ? \\
+  \end{split}
+\end{equation*}
+
+With IP \(x^3 + x^2 + 1\)
+
+\begin{equation*}
+  \begin{split}
+    (x^2 + x + 1) + (x^2 + 1) &= x \\
+    (x^2 + x + 1) - (x^2 + 1) &= x \\
+    (x^2 + x + 1) * (x^2 + 1) &= 1 \\
+    (x^2 + x + 1) / (x^2 + 1) &=\ ? \\
+  \end{split}
+\end{equation*}
+
+\section{Problem 5}
+
+Solved with our program for Problem 6.
+
+\subsection{Binary Representations}
+
+\(f(x) = 0xad = 1010\ 1101\) \\
+\(g(x) = 0x0d = 0000\ 1101\) \\
+
+\subsection{Multiplicative Inverses}
+
+MI of 0xad = 0xe7 = \(x^7 + x^6 + x^5 + x^2 + x + 1\)
+\\
+MI of 0x0d = 0xe1 = \(x^7 + x^6 + x^5 + 1\)
+
+\section{Problem 6}
+
+See emailed code.
 
 \end{document}
