@@ -21,13 +21,13 @@
 
 \bigskip
 
-\begin{tabular}{clccc}
-                     &                      & 6x                   & +\ 1                      & R 2                    \\ \hhline{~----}
-7x+3                 & )                    & \(9x^2\)             & +\ 3x                     & +\ 5                     \\
-                     &                      & \(-\ 9x^2\)             & +\ 7x                     &                        \\ \hhline{~~---}
-                     &                      &                      & 7x                      & +\ 5                     \\
-\multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{-\ 7x} & \multicolumn{1}{l}{+\ 3} \\ \hhline{~~~--}
-\multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{}    & \multicolumn{1}{l}{2} 
+\begin{tabular}{rrrrr}
+     &   & 6x       & + 1  & R 2 \\ \hhline{~----}
+7x+3 & ) & \(9x^2\) & + 3x & + 5 \\
+     & - & \(9x^2\) & + 7x &     \\ \hhline{~~---}
+     &   &          & 7x   & + 5 \\
+     &   & -        & 7x   & + 3 \\ \hhline{~~~--}
+     &   &          &      & 2 
 \end{tabular}
 
 \((9x^2+3x+5) / (7x+3) = 6x + 1,\ R\ 2\)
@@ -72,8 +72,21 @@
 
 \((x^5 + x^3 + x^2 + x + 1)\ /\ (x^2 + x + 1)\)
 
-\polylongdiv{x^5 + x^3 + x^2 + x + 1}{x^2 + x + 1}
+\bigskip
 
-= \(x^3 - x^2 + x + 1,\ R\ -x\)
+\begin{tabular}{rrrrrrrr}
+                &   & \(x^3\) & + \(x^2\) & + x       & + 1       &     & R x \\ \hhline{~-------}
+\(x^2\) + x + 1 & ) & \(x^5\) &           & + \(x^3\) & + \(x^2\) & + x & + 1 \\
+                & - & \(x^5\) & + \(x^4\) & + \(x^3\) &           &     &     \\ \hhline{~~------}
+                &   &         &   \(x^4\) &           & + \(x^2\) & + x & + 1 \\
+                &   &      -  &   \(x^4\) & + \(x^3\) & + \(x^2\) &     &     \\ \hhline{~~~-----}
+                &   &         &           & \(x^3\)   &           & + x & + 1 \\
+                &   &         &         - & \(x^3\)   & + \(x^2\) & + x &     \\ \hhline{~~~~----}
+                &   &         &           &           & \(x^2\)   &     & + 1 \\
+                &   &         &           & -         & \(x^2\)   & + x & + 1 \\ \hhline{~~~~~---}
+                &   &         &           &           &      & x   &    
+\end{tabular}
+
+= \(x^3 + x^2 + x + 1,\ R\ x\)
 
 \end{document}
